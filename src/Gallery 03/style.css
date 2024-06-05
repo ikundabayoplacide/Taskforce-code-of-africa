@@ -1,0 +1,42 @@
+.image-container {
+    display: flex;
+    justify-content: center; 
+    height: 97vh; 
+  }
+  
+  .image {
+    
+    width: 200px;
+    position: relative; 
+    cursor: pointer; 
+    transition: filter 0.3s ease-in-out;
+  }
+  
+  .image:hover,
+  .image.active {
+   
+    filter: brightness(0.4) saturate(0);
+}
+
+@media  screen and (max-width: 1200px) {
+  .image-container {
+    justify-content: flex-start; 
+  }
+
+.image{
+  height: 37rem;
+}
+
+}
+@media  screen and (max-width: 600px) {
+  .image-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: flex-start; 
+
+  }
+.image{
+  height: 30rem;
+}
+
+}
